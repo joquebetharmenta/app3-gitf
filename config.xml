@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns = "http://www.w3.org/ns/widgets"
  xmlns:gap="http://phonegap.com/ns/1.0"
- id = "com.phonegap.app1"
+ id = "com.phonegap.app3"
  version= "1.0.0">
 
-<name> app3-Dia mundial de la bicicleta </name>
+<name> app3 bicicleta </name>
 
 <description>
-Dia mundial de la bicicleta
+Aplicacion que muestra los DATOS del alumno
 </description>
 
-<author href="https://build.phonegap.com" email="andreatrujillomachorro@gmail.com">
+<author href="https://build.phonegap.com" email="andreatrujillomachorro@gmail.com"">
 andrea trujillo machorro
 </author>
 
@@ -27,9 +27,10 @@ andrea trujillo machorro
 <!-- Core plugins -->
 <allow-intent href="https://*/*"/>
 <acces origin="https://*/*"/>
-<allow-intent href="http://*/*"/w>
+<allow-intent href="http://*/*"/>
 <acces origin="http://*/*"/>
 <plugin name="cordova-plugin-whitelist" source="npm"/>
+
 
 <!-- <plugin name= "cordova-plugin-geolocation" source="npm" /> -->
  <!-- Third part plugins -->
@@ -37,4 +38,4 @@ andrea trujillo machorro
  <!-- Colocar icono app -->
 <icon src="res/android/mdpi.png" />
 
-</widget>
+</widget>  
