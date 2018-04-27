@@ -1,0 +1,299 @@
+﻿<!doctype html>
+
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Datos del alumno</title>
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema.app3.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+  <!--grupo JavaScript-->
+  <script src ="js/jquery-1.11.2.min.js"></script>
+  <script src ="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src ="js/acciones.js" type= "text/javascript"></script>-->
+ 
+  <script src ="phonegap.js"></script><!--necesario*/-->
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<body onLoad="MM_preloadImages('imagenes/MUNDIAL.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Historia de la bicicleta</h1>
+  </div> 
+  <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Banner conmemorativo:</h1>
+    <div>
+     <p>Esta es mi imagen del perfil</p>
+     <br> 
+    </div>
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','imagenes/MUNDIAL.jpg',1)"><img src="imagenes/DIA.jpg" width="50%" height="50%" id="Image40"></a>
+    </div>
+   </div>
+  </div>
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Historia de la bicicleta</h2>
+       <p>¿Por que se creo este transporte?</p> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn  ui-btn-icon-right ui-icon-carat-r">
+       <h2> Utilizacion como medio de transporte</h2>
+       <p>¿Como se utiliza?</p>  
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn  ui-btn-icon-right ui-icon-carat-r">
+       <h2> Tipos de Bicicletas</h2>
+       <p>¿Cuantos tipos de bicicletas hay?</p>  
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn  ui-btn-icon-right ui-icon-carat-r">
+       <h2> 5 marcas importantes de bicicletas</h2>
+       <p>Muestra deporte que mas le gusta al alumno</p> 
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn  ui-btn-icon-right ui-icon-carat-r">
+       <h2>Por que se celebra el dia mundial de la bicileta?</h2>
+       <p>Muestra otros gustos del alumno</p> 
+      </a>      
+     </li>      
+    </ul>
+  </div>
+  <div dara-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bicycle.png">
+   </div>
+   <div>
+    <h4>Aplicación Tres</h4>
+    <h4> Andrea Trujillo Machorro</h4>
+   </div>
+  </div>
+</div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Nombre</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Historia</h2>
+    <p> Lo único que está claro es que la bicicleta es un invento europeo. Dependiendo de lo que consideremos una bicicleta existen unas fechas u otras, siendo la primera bicicleta a pedales patentada como tal y a partir de la cual ha evolucionado la industria en el siglo XX la del británico John Kemp Starley en 1885, si bien es cierto que se basó en los modelos europeos construidos a lo largo de todo el siglo XIX.
+
+Existe la creencia de que Leonardo Da Vinci creó el primer boceto en papel de una bicicleta (¡que incluía hasta la cadena de transmisión!) a finales del siglo XV, pero el investigador alemán Hans-Erhard Lessing demostró en 1997 que el diseño se introdujo en los documentos de Leonardo a partir de 1961. También a finales del siglo XVIII, un francés, el conde de Sivrac habría inventado el celerífero, un primitivo cuadro sobre dos ruedas con una cabeza de animal, pero autores como Max Rauck, Gerd Volke y Felix Paturi han desmentido esta fecha atribuyéndola a antiguas rivalidades nacionalistas entre franceses y alemanes.</p>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bicycle.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Tres, ATM</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Utilizacion como medio de transporte</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <p>En países europeos como España, Dinamarca, Polonia, Holanda y Francia,  y en algunos asiáticos como China, la bicicleta es un medio de transporte  muy común entre sus habitantes.  Y es que se cree que alrededor del mundo, 800 millones de bicicletas ruedan cada día, con ventajas no sólo para las personas sino para el cuidado del medio ambiente.
+
+Y aunque en Colombia  todavía somos  temerosos para usar la bicicleta como medio de transporte, su capital, Bogotá, fue escogida recientemente por la fundación española Eroski Consumer como la octava mejor ciudad en el mundo para transportarse en estos vehículos de dos ruedas.</p>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bicycle.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Tres, ATM</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Bicicletas</h1> 
+  </div>
+  <div><img src="imagenes/bi9.jpg" width="50%" height="50%"></div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>Bicicleta inglesa</h2>
+<p>Sin duda, empezamos el artículo hablando de una bicicleta clásica y conocida a nivel mundial. La bicicleta inglesa es la demostración perfecta de la globalización y del transporte urbano. Este tipo de vehículo ha pasado por etapas mejores y peores, no obstante, en pleno júbilo vintage, la bicicletas inglesas están viviendo una segunda juventud.</p>
+     <h2>Bicicleta holandesa</h2>
+<p>Es considerada una modalidad de la bicicleta inglesa. Se trata de la versión roadster adaptada para mujeres. A finales del siglo XIX y principios del XX, las bicicletas inglesas se pusieron muy de moda en diversas partes del mundo. Sin embargo, había un problema para todas aquellas mujeres que querían montar en ella: el cuadro era demasiado alto y era incómodo subirse en el asiento de la misma </p>
+      <h2>Bicicleta plegable</h2>
+      <p>La bicicleta plegable, cuyo primer antecedente se remonta a finales del siglo XIX, incorpora una serie de bisagras o codos en el cuadro que permiten doblarla con facilidad para que ocupen un espacio más pequeño. Gracias a esta característica, esta tipología favorece y mucho su transporte: ¡te la puedes llevar a cualquier lado!</p>
+      <h2>Bicicleta playera o cruiser</h2>
+      <p>Están a medio camino entre las bicicletas inglesas y las de montaña. De hecho, fueron las precursoras de las segundas. El cuadro variará en función del modelo, aunque suele ser curvo. La principal característica de las playeras es que presentan neumáticos más gruesos y con menos pulgadas que las bicicletas inglesas y holandesas -se asemejan a los empleados en bicicletas de montaña-.</p>
+      <h2>Bicicleta eléctrica urbana</h2>
+      <p>Por suerte, cada vez son más las propuestas para fomentar el transporte con bicicletas en grandes ciudades mundiales. La ciudad de Madrid es una de las pocas zonas urbanas españolas que ha introducido este medio de transporte en sus calles gracias a la aparición de la bicicleta eléctrica.
+
+Este tipo de bici facilita mucho el transporte en extensos territorios y es una alternativa al coche para evitarte el tráfico que suele darse en los núcleos de población destacados.</p>
+      <h2>Bicicletas de montaña</h2>
+      <p>Bicicleta cross country<p/>
+      <p>Allá adonde vayas, contemplarás una bicicleta de montaña estándar, pues bien, estas son denominadas cross country o rally. Las bicicletas playeras dieron lugar a este modelo en torno a los años 80. Era necesaria una bici que permitiese recorrer los terrenos irregulares y rocosos de montaña. El resto de vehículos de pedales existentes no eran suficientes, ya que se averiaban con facilidad.
+
+Teniendo esta necesidad en cuenta, las bicicletas playeras comenzaron a emplearse para este fin más exigente.<p/>
+      <p>Bicicleta de enduro (All Mountain)<p/>
+      <p>Quizás, seas un apasionado de los descensos en bicicleta por montaña. Si esto es así, las bicicletas de enduro serán tu vehículo ideal para realizarlas. Tienen una suspensión con un recorrido de hasta 180 mm. Esto sumado al tipo de ruedas que posee, te permitirá saltar cualquier obstáculo que te encuentres. Además, el grosor de dichos neumáticos, provoca que sus frenos de disco sean más grandes de lo habitual.
+
+Son bicicletas con doble suspensión y protagonizan la modalidad All-Mountain, un tipo de competición de montaña que cada vez tiene más adeptos.<p/>
+      <p>Bicicleta de descenso o down hill<p/>
+      <p>Si las bicicletas de enduro valen para descensos importantes, las bicicletas down hill están hechas para bajadas extremas. Sus suspensiones trasera y delantera pueden alcanzar un recorrido de 200mm. Son un tipo de bicicletas elaboradas, sobre todo, para realizar descensos complejos, por lo que el pedaleo queda en un segundo plano en este vehículo de dos ruedas.
+
+La modalidad deportiva que se suele practicar con esta bicicleta lleva el nombre de descenso o down hill.<p/>
+      <p>Fat bike<p/>
+      <p>Es probable que te suenen unas bicicletas con las ruedas exageradamente anchas. Pues bien, esta tipología son las denominadas fat bikes. El enorme balón delantero de este tipo de bici es el motivo principal por el cual a este vehículo no le hace falta suspensión delantera<p/>
+      <p>E-bike<p/>
+      <p>Cuando hablamos de e-bikes, nos referimos a las bicicletas de montaña eléctricas. Los terrenos montañosos pueden resultar bastante duros, pero gracias a la incorporación de las baterías eléctricas en estos vehículos, el recorrido ya no se hace tan intenso.
+
+Las e-bikes presentan unas características similares a las de las bicicletas de montaña estándares (salvo la batería). La regla es la misma que en las bicicletas eléctricas urbanas: la ayuda de la bicicleta siempre llegará mientras pedalees. Este tipo de vehículo es ideal para gente que tenga algún problema o limitación física aunque, eso sí, son vehículos bastante caros.<p/>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/bicicletacruiser.jpg" alt="bicicleta-cruiser" title="bicicleta-cruiser" id="wows1_0"/></li>
+		<li><img src="data1/images/bicicletainglesa.jpg" alt="bicicleta-inglesa" title="bicicleta-inglesa" id="wows1_1"/></li>
+		<li><img src="data1/images/bicicletamontana.jpg" alt="bicicleta-montana" title="bicicleta-montana" id="wows1_2"/></li>
+		<li><img src="data1/images/bicicletaholandesa.jpg" alt="bicicleta-holandesa" title="bicicleta-holandesa" id="wows1_3"/></li>
+		<li><img src="data1/images/bicicletaplegable.jpg" alt="bicicleta-plegable" title="bicicleta-plegable" id="wows1_4"/></li>
+		<li><img src="data1/images/bicicletafixie.jpg" alt="bicicleta-fixie" title="bicicleta-fixie" id="wows1_5"/></li>
+		<li><img src="data1/images/bicicletaselectricasmotor.jpg" alt="bicicletas-electricas-motor" title="bicicletas-electricas-motor" id="wows1_6"/></li>
+		<li><img src="data1/images/bicimontanaelectrica.jpg" alt="bici-montana-electrica" title="bici-montana-electrica" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/endurociclistapendiente.jpg" alt="wow slider" title="enduro-ciclista-pendiente" id="wows1_8"/></a></li>
+		<li><img src="data1/images/fatbikesnegra.jpg" alt="fat-bikes-negra" title="fat-bikes-negra" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="bicicleta-cruiser"><span><img src="data1/tooltips/bicicletacruiser.jpg" alt="bicicleta-cruiser"/>1</span></a>
+		<a href="#" title="bicicleta-inglesa"><span><img src="data1/tooltips/bicicletainglesa.jpg" alt="bicicleta-inglesa"/>2</span></a>
+		<a href="#" title="bicicleta-montana"><span><img src="data1/tooltips/bicicletamontana.jpg" alt="bicicleta-montana"/>3</span></a>
+		<a href="#" title="bicicleta-holandesa"><span><img src="data1/tooltips/bicicletaholandesa.jpg" alt="bicicleta-holandesa"/>4</span></a>
+		<a href="#" title="bicicleta-plegable"><span><img src="data1/tooltips/bicicletaplegable.jpg" alt="bicicleta-plegable"/>5</span></a>
+		<a href="#" title="bicicleta-fixie"><span><img src="data1/tooltips/bicicletafixie.jpg" alt="bicicleta-fixie"/>6</span></a>
+		<a href="#" title="bicicletas-electricas-motor"><span><img src="data1/tooltips/bicicletaselectricasmotor.jpg" alt="bicicletas-electricas-motor"/>7</span></a>
+		<a href="#" title="bici-montana-electrica"><span><img src="data1/tooltips/bicimontanaelectrica.jpg" alt="bici-montana-electrica"/>8</span></a>
+		<a href="#" title="enduro-ciclista-pendiente"><span><img src="data1/tooltips/endurociclistapendiente.jpg" alt="enduro-ciclista-pendiente"/>9</span></a>
+		<a href="#" title="fat-bikes-negra"><span><img src="data1/tooltips/fatbikesnegra.jpg" alt="fat-bikes-negra"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <img src="imagenes/bicycle.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Tres, ATM</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>5 mejores marcas</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <div><img src="imagenes/ruta2.jpg" width="50%" height="50%"></div>
+    <h2>1. Felt: </h2>
+    <p>La principal particularidad de Felt es el diseño, pues presenta las bicicletas más bonitas del sector. Tecnológicamente también es una de las firmas más avanzadas, ya que invierte gran parte de su presupuesto anual en I+D+i. Es una de las mejores marcas para ciclismo en carretera y cuenta con un amplio rango de precios y de bicis.</p>
+    <h2>2. Cube: </h2>
+    <p>Originales y llamativas, las bicicletas de Cube son reconocibles nada más verlas. Presentan un diseño original con colores bastante vistosos que gustan y desagradan a partes iguales. Más allá de la estética, sus modelos son muy fiables para circular por carretera y se pueden personalizar eligiendo entre varias combinaciones de platos y cuadros.</p>
+     <h2>3. Orbea: </h2>
+    <p>Esta firma española ha subido muchos peldaños en los últimos años, convirtiéndose así en una de las mejores marcas del momento. Sus bicis dan un alto rendimiento y son bastante competitivas. Económicamente sus precios son un poco elevados, pero lo compensan con la fiabilidad y la duración del equipo. Son una inversión a largo plazo.</p>
+     <h2>4. Canyon: </h2>
+    <p>Su ligereza, estética y exclusividad la convierten en la marca de bicicletas más deseada del mercado. Únicamente se venden por internet, lo que hace que sus modelos no sean tan comunes como otros. Los acabados lujosos pero minimalistas hacen que sea objeto de deseo de muchos, pero las bicicletas Canyon no son sólo imagen. Seguras y fiables, son la mejor opción para circular por la ciudad.</p>
+     <h2>5. MMR: </h2>
+    <p>‘Metro’ es el modelo que esta firma española presenta para urbe. Es seguro y polivalente, ya que pese a ser una bici de ciudad también se puede utilizar para salidas por carreteras o sendas poco pedregosas. Sus precios se sitúan en un rango medio, lo que las hace accesibles a toda clase de bolsillos. </p>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/canyon.jpg" alt="CANYON" title="CANYON" id="wows1_0"/></li>
+		<li><img src="data1/images/cube.jpg" alt="CUBE" title="CUBE" id="wows1_1"/></li>
+		<li><img src="data1/images/felt.png" alt="FELT" title="FELT" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/mmr.jpg" alt="wowslider.com" title="MMR" id="wows1_3"/></a></li>
+		<li><img src="data1/images/orbea.png" alt="ORBEA" title="ORBEA" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="CANYON"><span><img src="data1/tooltips/canyon.jpg" alt="CANYON"/>1</span></a>
+		<a href="#" title="CUBE"><span><img src="data1/tooltips/cube.jpg" alt="CUBE"/>2</span></a>
+		<a href="#" title="FELT"><span><img src="data1/tooltips/felt.png" alt="FELT"/>3</span></a>
+		<a href="#" title="MMR"><span><img src="data1/tooltips/mmr.jpg" alt="MMR"/>4</span></a>
+		<a href="#" title="ORBEA"><span><img src="data1/tooltips/orbea.png" alt="ORBEA"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+   <img src="imagenes/bicycle.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Tres, ATM</h4>
+  </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Gustos e intereses</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+    <h2>El Día Mundial de la Bicicleta o Día de la Bicicleta se celebra en todo el mundo cada 19 de abril con la finalidad de promover el uso de este medio de transporte, llamar la atención sobre los derechos de los ciclistas y destacar sus beneficios para la salud y para la movilidad sostenible. La fecha hace referencia al 19 de abril de 1943, cuando Albert Hofmann, conocido como «el padre del LSD», realizaba en su laboratorio un autoexperimeto con una sustancia para determinar sus efectos psicotrópicos, tras el cual su regreso a casa en bicicleta se tornaría famoso.</h2>
+   <div><img src="imagenes/bi10.jpg" width="50%" height="50%"></div>
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/bicycle.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Tres, ATM</h4>
+  </div>
+ </div>
+
+</body>
+</html>
+        
+       
+  
